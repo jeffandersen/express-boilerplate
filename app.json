@@ -1,0 +1,25 @@
+{
+  "name": "express-boilerplate",
+  "description": "Express.js boilerplate with GitHub Passport.js authentication and Connect-Redis session store (Heroku deployable)",
+  "addons": [
+    "rediscloud"
+  ],
+  "env": {
+    "EXPRESS_SESSION_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "GITHUB_CLIENT_ID": {
+      "description": "A client id provided for a GitHub OAuth Application",
+      "required": true
+    },
+    "GITHUB_CLIENT_SECRET": {
+      "description": "A client secret provided for a GitHub OAuth Application",
+      "required": true
+    },
+    "GITHUB_CALLBACK_URL": {
+      "description": "Your application's hostname with the path /auth/github/callback",
+      "required": true
+    }
+  }
+}
