@@ -1,4 +1,4 @@
 express-boilerplate
 ===================
 
-Express.js boilerplate with GitHub Passport.js authentication and Connect-Redis session store (Heroku deployable)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jeffandersen/express-boilerplate)
