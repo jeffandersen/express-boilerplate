@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 var debug = require('debug')('code-review');
 var app = require('../index');
+var redis = require('../lib/redis');
 
 app.set('port', process.env.PORT || 3000);
 
-var server = app.listen(app.get('port'), function() {
-  debug('Express server listening on port ' + server.address().port);
+redis.initialize(function(err) {
+  if (err) {
+    throw err;
+  }
+
+  var server = app.listen(app.get('port'), function() {
+    debug('Express server listening on port ' + server.address().port);
+  });
 });

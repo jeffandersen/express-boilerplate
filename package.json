@@ -18,6 +18,7 @@
     "passport-github": "0.1.5",
     "express-session": "1.9.1",
     "lodash": "2.4.1",
-    "connect-redis": "2.1.0"
+    "connect-redis": "2.1.0",
+    "redis": "~0.12.1"
   }
 }
